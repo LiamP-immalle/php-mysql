@@ -9,7 +9,7 @@ include 'db_credentials.php';
 
 function voegBerichtToe($conn, $inhoud) {
     $sql = "INSERT INTO messages ( inhoud, tijdstip )
-        VALUES($inhoud', now())";
+        VALUES('$inhoud', now())";
     $conn->exec($sql);
 }
 
